@@ -1,13 +1,13 @@
 *{
+	margin-left: 10px;
 	box-sizing: border-box;
 	color: black;
 }
 .top-head{
 	font-size: 26px;
-	margin: 23px;
 }
 .top-main{
 	font-size: 12px;
 	line-height: 50px;
-	margin-left: 53px;
+	margin-left: 40px;
 }

@@ -2,8 +2,9 @@ class BooksController < ApplicationController
 
   def top
   end
-  
+
   def index
+  	@book = Book.all
   end
 
   def show
