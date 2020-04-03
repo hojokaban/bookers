@@ -1,4 +1,11 @@
 <% @book = Book.new unless @book %>
+
+<% @book.errors.full_messages.each do |message| %>
+ <div class="form-error">
+  <%= message %>
+ </div>
+<% end %>
+
 <h1>Editing Book</h1>
 <%= form_for(@book) do |f| %>
   <p>Title</p>

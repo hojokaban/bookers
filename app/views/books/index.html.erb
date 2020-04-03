@@ -9,10 +9,19 @@
 	  <td><%= book.title %></td>
 	  <td><%= book.body %></td>
 	  <td><%= link_to "Show", book_path(book) %>
-	      <%= link_to "Edit", edit_book_path(book) %></td>
+	      <%= link_to "Edit", edit_book_path(book) %>
+	      <%= link_to "Destroy", book_path(book), method: :delete %>
+	      </td>
     </tr>
   <% end %>
 </table>
+
+<% @book.errors.full_messages.each do |message| %>
+ <div class="form-error">
+  <%= message %>
+ </div>
+<% end %>
+
 <%= form_for(@book) do |f| %>
   <h2>New Book</h2>
   <p>Title</p>
