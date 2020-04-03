@@ -3,6 +3,11 @@
 	box-sizing: border-box;
 	color: black;
 }
+.clearfix::after {
+	content:"";
+	display:block;
+	clear:both;
+}
 .top-head{
 	font-size: 26px;
 }
@@ -10,4 +15,11 @@
 	font-size: 12px;
 	line-height: 50px;
 	margin-left: 40px;
+}
+span{
+	font-weight: bold;
+}
+.flash{
+	font-size: 12px;
+	color: green;
 }
