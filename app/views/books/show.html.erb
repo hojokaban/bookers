@@ -6,5 +6,5 @@
 
 <p><span>Title:</span> <%= @book.title %></p>
 <p><span>Body:</span> <%= @book.body %></p>
-<p><%= link_to "Edit", edit_book_path(@book) %>|
-	<%= link_to "Back", "/books" %></p>
+<p><%= link_to "Edit", edit_book_path(@book) %>
+	<span>|</span><%= link_to "Back", books_path %></p>

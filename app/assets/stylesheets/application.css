@@ -3,23 +3,46 @@
 	box-sizing: border-box;
 	color: black;
 }
-.clearfix::after {
-	content:"";
-	display:block;
-	clear:both;
+h2{
+	display: block;
 }
 .top-head{
 	font-size: 26px;
 }
 .top-main{
 	font-size: 12px;
-	line-height: 50px;
+	line-height: 48px;
 	margin-left: 40px;
+}
+table{
+	font-size: 14px;
+	line-height: 20px;
 }
 span{
 	font-weight: bold;
 }
 .flash{
 	font-size: 12px;
+	line-height: 50px;
 	color: green;
+}
+.alert {
+	width: 470px;
+    color:#262626;
+    font-size: 13px;
+    background:#EEEEEE;
+    border:2px solid red;
+    font-weight:500;
+  }
+.alert_head {
+	color: white;
+	font-weight: 700;
+	line-height: 30px;
+	margin: 0 0 0 5px;
+}
+.head_block {
+	width: 467px;
+	height: 30px;
+	background-color: #CC0000;
+	margin: 0;
 }

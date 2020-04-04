@@ -1,0 +1,16 @@
+<% if model.errors.any? %>
+<% i = 0 %>
+<% model.errors.full_messages.each do |message| %>
+  		  <% i = i+1 %>
+<% end %>
+  <div class = "alert">
+  	<div class="head_block">
+  		<p class = "alert_head"><%= i %> error prohibited this book from being saved:</p>
+  	</div>
+  	<ul>
+  		<% model.errors.full_messages.each do |message| %>
+  		  <li><%= message %></li>
+  		<% end %>
+    </ul>
+  </div>
+<% end %>

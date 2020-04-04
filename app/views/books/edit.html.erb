@@ -1,19 +1,14 @@
 <% @book = Book.new unless @book %>
 
-<% @book.errors.full_messages.each do |message| %>
- <div class="form-error">
-  <%= message %>
- </div>
-<% end %>
-
-<h1>Editing Book</h1>
+<h2>Editing Book</h2>
 <%= form_for(@book) do |f| %>
+  <%= render partial: 'layouts/error_messages', locals: {model: @book} %>
   <p>Title</p>
   <%= f.text_field :title %>
   <p>Body</p>
   <%= f.text_area :body %>
-  <%= f.submit 'Update Book' %>
+  <div><%= f.submit 'Update Book' %></div>
 <% end %>
 
-<p><%= link_to "Show", book_path(@book) %>|
-   <%= link_to "Back", "/books" %></p>
+<p><%= link_to "Show", book_path(@book) %><span>|</span>
+   <%= link_to "Back", books_path %></p>
